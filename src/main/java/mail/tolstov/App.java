@@ -16,8 +16,15 @@ public class App {
         try (SessionFactory sessionfactory = configuration.buildSessionFactory()) {
             Session session = sessionfactory.getCurrentSession();
             session.beginTransaction();
-            Person person = session.get(Person.class, 1);
-            System.out.println(person.getName() + " " + person.getAge());
+            Person person1 = new Person("Test1",30 );
+            Person person2 = new Person("Test2",40 );
+            Person person3 = new Person("Test2",50 );
+
+            session.persist(person1);
+            session.persist(person2);
+            session.persist(person3);
+
+            session.getTransaction().commit();
         }
     }
 }

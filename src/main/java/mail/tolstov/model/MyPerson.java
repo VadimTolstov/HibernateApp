@@ -2,23 +2,27 @@ package mail.tolstov.model;
 
 import jakarta.persistence.*;
 
+//таблица с @GeneratedValue(strategy = GenerationType.SEQUENCE)
 @Entity
-@Table(name = "person")
-public class Person {
+@Table(name = "my_person")
+public class MyPerson {
 
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,
+    generator = "seq_generator_person")
+    @SequenceGenerator(name = "seq_generator_person",
+            sequenceName = "my_person_id_seq", allocationSize = 1)
     private int id;
     @Column(name = "name")
     private String name;
     @Column(name = "age")
     private int age;
 
-    public Person() {
+    public MyPerson() {
     }
 
-    public Person(String name, int age) {
+    public MyPerson(String name, int age) {
         this.name = name;
         this.age = age;
     }
