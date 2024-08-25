@@ -10,9 +10,11 @@
   <name>HibernateApp</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+    </properties>
 
   <dependencies>
     <dependency>
@@ -21,5 +23,42 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.7.4</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>6.6.0.Final</version>
+    </dependency>
+
+    <!--  https://mvnrepository.com/artifact/org.hibernate.common/hibernate-commons-annotations -->
+   <dependency>
+     <groupId>org.hibernate.common</groupId>
+     <artifactId>hibernate-commons-annotations</artifactId>
+     <version>7.0.1.Final</version>
+   </dependency>
+
+   <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-c3p0 -->
+    <dependency>
+      <groupId>org.hibernate.orm</groupId>
+      <artifactId>hibernate-c3p0</artifactId>
+      <version>6.6.0.Final</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
+    <dependency>
+      <groupId>jakarta.annotation</groupId>
+      <artifactId>jakarta.annotation-api</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+
+
   </dependencies>
 </project>
