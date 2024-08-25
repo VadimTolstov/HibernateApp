@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f36b92e0-48d9-48eb-a623-d4daff580cf2" name="Changes" comment="начало1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+    <list default="true" id="f36b92e0-48d9-48eb-a623-d4daff580cf2" name="Changes" comment="lesson_1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mail/tolstov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mail/tolstov/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/model/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724571306057</updated>
       <workItem from="1724571307253" duration="3092000" />
-      <workItem from="1724588154236" duration="3854000" />
+      <workItem from="1724588154236" duration="5085000" />
     </task>
     <task id="LOCAL-00001" summary="начало">
       <option name="closed" value="true" />
@@ -106,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724571467396</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lesson_1">
+      <option name="closed" value="true" />
+      <created>1724592867802</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724592867802</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="начало" />
     <MESSAGE value="начало1" />
-    <option name="LAST_COMMIT_MESSAGE" value="начало1" />
+    <MESSAGE value="lesson_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson_1" />
   </component>
 </project>
