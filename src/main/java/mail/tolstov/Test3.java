@@ -1,29 +1,25 @@
 package mail.tolstov;
 
-
 import mail.tolstov.model.Person;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-/**
- * Hello world!
- */
-public class App {
+import java.util.List;
+
+//получение данных
+public class Test3 {
     public static void main(String[] args) {
         Configuration configuration = new Configuration().addAnnotatedClass(Person.class);
 
         try (SessionFactory sessionfactory = configuration.buildSessionFactory()) {
             Session session = sessionfactory.getCurrentSession();
             session.beginTransaction();
-            Person person1 = new Person("Test1",30 );
-            Person person2 = new Person("Test2",40 );
-            Person person3 = new Person("Test2",50 );
 
-            session.persist(person1);
-            session.persist(person2);
-            session.persist(person3);
+            List<Person> personList = session.createQuery("from Person", Person.class).getResultList();
 
+            for (Person p: personList)
+                System.out.println(p);
             session.getTransaction().commit();
         }
     }
