@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f36b92e0-48d9-48eb-a623-d4daff580cf2" name="Changes" comment="test3 - получение данных test4 - изменение данных и получения данных с помощью запросов Test5 - удаление данных с помощью запроса lesson4 - обновление данных и удаление данных">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/Lesson4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/Test4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/Test5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/Lesson5HQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mail/tolstov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/Lesson1_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mail/tolstov/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/model/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="lesson-3-delete" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +36,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="lesson-5-HQL" />
+                    <option name="lastUsedInstant" value="1724827238" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="lesson-3-delete" />
                     <option name="lastUsedInstant" value="1724599809" />
@@ -107,9 +103,9 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test5">
-    <configuration name="Lesson1_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mail.tolstov.Lesson1_3" />
+  <component name="RunManager" selected="Application.Lesson5HQL">
+    <configuration name="Lesson4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mail.tolstov.Lesson4" />
       <module name="HibernateApp" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +117,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mail.tolstov.Lesson4" />
+    <configuration name="Lesson5HQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mail.tolstov.Lesson5HQL" />
       <module name="HibernateApp" />
       <extension name="coverage">
         <pattern>
@@ -175,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lesson5HQL" />
         <item itemvalue="Application.Test5" />
         <item itemvalue="Application.Lesson4" />
         <item itemvalue="Application.Test4" />
         <item itemvalue="Application.Test3" />
-        <item itemvalue="Application.Lesson1_3" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +191,7 @@
       <workItem from="1724588154236" duration="9289000" />
       <workItem from="1724652967793" duration="3842000" />
       <workItem from="1724741715568" duration="4696000" />
-      <workItem from="1724823921630" duration="772000" />
+      <workItem from="1724823921630" duration="2017000" />
     </task>
     <task id="LOCAL-00001" summary="начало">
       <option name="closed" value="true" />
@@ -237,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724599751634</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test3 - получение данных test4 - изменение данных и получения данных с помощью запросов Test5 - удаление данных с помощью запроса lesson4 - обновление данных и удаление данных">
+      <option name="closed" value="true" />
+      <created>1724827186654</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724827186654</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
