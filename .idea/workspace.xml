@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f36b92e0-48d9-48eb-a623-d4daff580cf2" name="Changes" comment="test3 - получение данных test4 - изменение данных и получения данных с помощью запросов Test5 - удаление данных с помощью запроса lesson4 - обновление данных и удаление данных">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/Lesson5HQL.java" afterDir="false" />
+    <list default="true" id="f36b92e0-48d9-48eb-a623-d4daff580cf2" name="Changes" comment="lesson-5-HQL - запросы с помощью HQL">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/OneToMany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/one_to_many/model/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/one_to_many/model/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson-3-delete" />
+        <entry key="$PROJECT_DIR$" value="lesson-5-HQL" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +38,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="lesson-6-one-to-Many" />
+                    <option name="lastUsedInstant" value="1724828862" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="lesson-5-HQL" />
                     <option name="lastUsedInstant" value="1724827238" />
@@ -103,7 +109,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lesson5HQL">
+  <component name="RunManager" selected="Application.OneToMany">
     <configuration name="Lesson4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mail.tolstov.Lesson4" />
       <module name="HibernateApp" />
@@ -130,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mail.tolstov.Test3" />
+    <configuration name="OneToMany" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mail.tolstov.relationship.OneToMany" />
       <module name="HibernateApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mail.tolstov.*" />
+          <option name="PATTERN" value="mail.tolstov.relationship.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OneToMany" />
         <item itemvalue="Application.Lesson5HQL" />
         <item itemvalue="Application.Test5" />
         <item itemvalue="Application.Lesson4" />
         <item itemvalue="Application.Test4" />
-        <item itemvalue="Application.Test3" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +197,9 @@
       <workItem from="1724588154236" duration="9289000" />
       <workItem from="1724652967793" duration="3842000" />
       <workItem from="1724741715568" duration="4696000" />
-      <workItem from="1724823921630" duration="2017000" />
+      <workItem from="1724823921630" duration="4991000" />
+      <workItem from="1724909658256" duration="636000" />
+      <workItem from="1724997217670" duration="9134000" />
     </task>
     <task id="LOCAL-00001" summary="начало">
       <option name="closed" value="true" />
@@ -241,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724827186654</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lesson-5-HQL - запросы с помощью HQL">
+      <option name="closed" value="true" />
+      <created>1724828744718</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724828744718</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +281,7 @@
     <MESSAGE value="lesson_2" />
     <MESSAGE value="persist добовление данных и две стратегии  @GeneratedValue(strategy = GenerationType.SEQUENCE и GenerationType.IDENTITY" />
     <MESSAGE value="test3 - получение данных test4 - изменение данных и получения данных с помощью запросов Test5 - удаление данных с помощью запроса lesson4 - обновление данных и удаление данных" />
-    <option name="LAST_COMMIT_MESSAGE" value="test3 - получение данных test4 - изменение данных и получения данных с помощью запросов Test5 - удаление данных с помощью запроса lesson4 - обновление данных и удаление данных" />
+    <MESSAGE value="lesson-5-HQL - запросы с помощью HQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson-5-HQL - запросы с помощью HQL" />
   </component>
 </project>
