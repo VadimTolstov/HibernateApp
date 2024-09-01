@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f36b92e0-48d9-48eb-a623-d4daff580cf2" name="Changes" comment="lesson-5-HQL - запросы с помощью HQL">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/OneToMany.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/one_to_many/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/one_to_many/model/Person.java" afterDir="false" />
+    <list default="true" id="f36b92e0-48d9-48eb-a623-d4daff580cf2" name="Changes" comment="Каскадирование @Cascade">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/one_to_one/sda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/one_to_many/Cascading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/one_to_many/db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/OneToMany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/one_to_many/OneToMany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/one_to_many/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mail/tolstov/relationship/one_to_many/model/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson-5-HQL" />
+        <entry key="$PROJECT_DIR$" value="lesson-7-one-to-one" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +41,14 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="lesson-7-cascading" />
+                    <option name="lastUsedInstant" value="1725193769" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="lesson-7-one-to-one" />
+                    <option name="lastUsedInstant" value="1725176729" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="lesson-6-one-to-Many" />
                     <option name="lastUsedInstant" value="1724828862" />
                   </RecentBranch>
@@ -49,10 +59,6 @@
                   <RecentBranch>
                     <option name="branchName" value="lesson-3-delete" />
                     <option name="lastUsedInstant" value="1724599809" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1724599808" />
                   </RecentBranch>
                 </list>
               </option>
@@ -109,7 +115,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OneToMany">
+  <component name="RunManager" selected="Application.Cascading">
+    <configuration name="Cascading" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mail.tolstov.relationship.one_to_many.Cascading" />
+      <module name="HibernateApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mail.tolstov.relationship.one_to_many.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lesson4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mail.tolstov.Lesson4" />
       <module name="HibernateApp" />
@@ -137,24 +156,11 @@
       </method>
     </configuration>
     <configuration name="OneToMany" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mail.tolstov.relationship.OneToMany" />
+      <option name="MAIN_CLASS_NAME" value="mail.tolstov.relationship.one_to_many.OneToMany" />
       <module name="HibernateApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mail.tolstov.relationship.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mail.tolstov.Test4" />
-      <module name="HibernateApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mail.tolstov.*" />
+          <option name="PATTERN" value="mail.tolstov.relationship.one_to_many.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Cascading" />
         <item itemvalue="Application.OneToMany" />
         <item itemvalue="Application.Lesson5HQL" />
         <item itemvalue="Application.Test5" />
         <item itemvalue="Application.Lesson4" />
-        <item itemvalue="Application.Test4" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +205,10 @@
       <workItem from="1724741715568" duration="4696000" />
       <workItem from="1724823921630" duration="4991000" />
       <workItem from="1724909658256" duration="636000" />
-      <workItem from="1724997217670" duration="9134000" />
+      <workItem from="1724997217670" duration="9889000" />
+      <workItem from="1725174030215" duration="2111000" />
+      <workItem from="1725180843243" duration="1268000" />
+      <workItem from="1725191750442" duration="5317000" />
     </task>
     <task id="LOCAL-00001" summary="начало">
       <option name="closed" value="true" />
@@ -257,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724828744718</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="OneToMany получение удаление добавление изменение">
+      <option name="closed" value="true" />
+      <created>1725025959037</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725025959037</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +299,8 @@
     <MESSAGE value="persist добовление данных и две стратегии  @GeneratedValue(strategy = GenerationType.SEQUENCE и GenerationType.IDENTITY" />
     <MESSAGE value="test3 - получение данных test4 - изменение данных и получения данных с помощью запросов Test5 - удаление данных с помощью запроса lesson4 - обновление данных и удаление данных" />
     <MESSAGE value="lesson-5-HQL - запросы с помощью HQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson-5-HQL - запросы с помощью HQL" />
+    <MESSAGE value="OneToMany получение удаление добавление изменение" />
+    <MESSAGE value="Каскадирование @Cascade" />
+    <option name="LAST_COMMIT_MESSAGE" value="Каскадирование @Cascade" />
   </component>
 </project>

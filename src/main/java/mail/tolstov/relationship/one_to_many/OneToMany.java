@@ -1,4 +1,4 @@
-package mail.tolstov.relationship;
+package mail.tolstov.relationship.one_to_many;
 
 import mail.tolstov.relationship.one_to_many.model.Item;
 import mail.tolstov.relationship.one_to_many.model.Person;
