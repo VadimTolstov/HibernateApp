@@ -18,7 +18,7 @@ public class Person {
     @Column(name = "age")
     private int age;
 
-    @OneToMany(mappedBy = "owner")//, cascade = CascadeType.PERSIST) каскадирование так или ниже
+    @OneToMany(mappedBy = "owner",fetch = FetchType.LAZY)//FetchType.LAZY ленивая загрузка, cascade = CascadeType.PERSIST) каскадирование так или ниже
     @Cascade({org.hibernate.annotations.CascadeType.PERSIST})//, org.hibernate.annotations.CascadeType.REFRESH})
     private List<Item> items;
 
